@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Array function</title>
+<script>
+    function mapFun() {
+    
+    const emp=new Map([
+    [1,"krish"],
+    [2,"ram"],
+    [3,"Radha"]
+    ]);
+    document.getElementById("mapvalue").innerText=emp.get(2);
+}
+
+</script>
+    </head>
+    <body>
+        <button type="button" onclick="mapFun()">
+            Get First Position value
+        </button>
+        <p id="mapvalue"></p>
+            <br/>
+    </body>
+</html>
