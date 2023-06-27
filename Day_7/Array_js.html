@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Array function</title>
+<script>
+    function arrayFun() {
+    var i;
+    var emp=new Array();
+    emp[0]="om";
+    emp[1]="Hari";
+    emp[2]="Krish";
+    var string="";
+    for (i=0;i<emp.length;i++){
+        string += emp[i]+"<br/>";
+    }
+    document.getElementById("arrayvalue").innerHTML=string;
+}
+
+</script>
+    </head>
+    <body>
+        <button type="button" onclick="arrayFun()">
+            Get Array value
+        </button>
+        <p id="arrayvalue"></p>
+            <br/>
+    </body>
+</html>

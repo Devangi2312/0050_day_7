@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            js basic
+        </title>
+        <script>
+            function currentdate(){
+                var d=new Date();
+                var today= d.getDate()+'-'+(d.getMonth() +1) +'-'+ d.getFullYear();
+                document.getElementById('result').innerText= today;
+                console.log(d);
+            }
+        </script>
+        <script type="text/javascript" src="myjavascript.js"></script>
+    </head>
+    <body>
+        <button type="button" onclick="currentdate()">
+        click me to display date and time</button>
+        <p id="result"></p>
+        <div class="row">
+            <label>Full name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <button type="button" onclick="stringLength()">
+        CLick to get length</button>
+        <p id="length"></p>
+    </body>
+    </html>
